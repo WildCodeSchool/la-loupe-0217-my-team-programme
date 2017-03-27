@@ -22,12 +22,22 @@ angular.module('app')
                     }
                 }
             })
+
             .state('anon.myTeam', {
                 url: '/',
                 views: {
                     'content@': {
                         templateUrl: 'anon/myTeam.html',
                         controller: 'ApiController'
+                    }
+                }
+            })
+            .state('anon.competition', {
+                url: '/',
+                views: {
+                    'content@': {
+                        templateUrl: 'anon/competition.html',
+                        controller: 'competitionController'
                     }
                 }
             })
