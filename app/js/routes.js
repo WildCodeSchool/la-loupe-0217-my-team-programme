@@ -23,7 +23,7 @@ angular.module('app')
                 }
             })
             .state('anon.competition', {
-                url: '/',
+                url: '/competition',
                 views: {
                     'content@': {
                         templateUrl: 'anon/competition.html',
@@ -32,7 +32,7 @@ angular.module('app')
                 }
             })
             .state('anon.myTeam', {
-                url: '/',
+                url: '/myteam',
                 views: {
                     'content@': {
                         templateUrl: 'anon/myTeam.html',
