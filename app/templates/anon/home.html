@@ -1,5 +1,11 @@
 <h1>My Team Programme</h1>
 
+<div id='calendar'>
+    <ul>
+        <li ng-repeat='match in schedule'>
+            {{' Journée '}} {{match.matchday}} {{match.date | date : 'dd/MM/yyyy'}} {{match.homeTeamName}} {{' - '}} {{match.awayTeamName}}
+        </li>
+</div>
 
 <section ng-init="tab=1">
 
@@ -8,17 +14,9 @@
         <li ui-sref-active="active"><a ui-sref="anon.home">Mon calendrier</a></li>
 
         <li ui-sref-active="active"><a ui-sref="anon.competition">Mes compétitions</a></li>
-        </li>
 
         <li ui-sref-active="active"><a ui-sref="anon.myTeam">Mes équipes</a></li>
 
     </ul>
 
 </section>
-
-<div id='calendar'>
-    <ul>
-        <li ng-repeat='match in schedule'>
-            {{' Journée '}} {{match.matchday}} {{match.date | date : 'dd/MM/yyyy'}} {{match.homeTeamName}} {{' - '}} {{match.awayTeamName}}
-        </li>
-</div>
