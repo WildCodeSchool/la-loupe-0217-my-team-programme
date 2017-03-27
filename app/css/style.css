@@ -5,6 +5,11 @@
 }
 .logo{
    width:100px;
-   height:auto;
+   height:100px;
+   opacity: 1;
+}
+.logo{
+   width:100px;
+   height:100px;
    opacity: 0.5
 }
