@@ -22,6 +22,16 @@ angular.module('app')
                     }
                 }
             })
+            .state('anon.competition', {
+                url: '/',
+                views: {
+                    'content@': {
+                        templateUrl: 'anon/competition.html',
+                        controller: 'competitionController'
+                    }
+                }
+            })
+
             .state('anon.login', {
                 url: '/login',
                 views: {
