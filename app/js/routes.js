@@ -22,8 +22,17 @@ angular.module('app')
                     }
                 }
             })
+            .state('anon.competition', {
+                url: '/competition',
+                views: {
+                    'content@': {
+                        templateUrl: 'anon/competition.html',
+                        controller: 'competitionController'
+                    }
+                }
+            })
             .state('anon.myTeam', {
-                url: '/',
+                url: '/myteam',
                 views: {
                     'content@': {
                         templateUrl: 'anon/myTeam.html',
@@ -31,6 +40,7 @@ angular.module('app')
                     }
                 }
             })
+
             .state('anon.login', {
                 url: '/login',
                 views: {
