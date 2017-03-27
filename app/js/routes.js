@@ -10,6 +10,9 @@ angular.module('app')
                     'navbar@': {
                         templateUrl: 'anon/navbar.html',
                         controller: 'NavbarController'
+                    },
+                    'onglet@': {
+                      templateUrl: 'anon/onglet.html'
                     }
                 }
             })
@@ -22,17 +25,8 @@ angular.module('app')
                     }
                 }
             })
-            .state('anon.competition', {
-                url: '/competition',
-                views: {
-                    'content@': {
-                        templateUrl: 'anon/competition.html',
-                        controller: 'competitionController'
-                    }
-                }
-            })
             .state('anon.myTeam', {
-                url: '/myteam',
+                url: '/myTeam',
                 views: {
                     'content@': {
                         templateUrl: 'anon/myTeam.html',
@@ -40,13 +34,21 @@ angular.module('app')
                     }
                 }
             })
-
             .state('anon.login', {
                 url: '/login',
                 views: {
                     'content@': {
                         templateUrl: 'anon/login.html',
                         controller: 'LoginController'
+                    }
+                }
+            })
+            .state('anon.competition', {
+                url: '/competition',
+                views: {
+                    'content@': {
+                        templateUrl: 'anon/competition.html',
+                        controller: 'competitionController'
                     }
                 }
             })
