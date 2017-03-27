@@ -1,0 +1,10 @@
+.logos {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+}
+.logo{
+   width:100px;
+   height:auto;
+   opacity: 0.5
+}
