@@ -22,6 +22,7 @@ angular.module('app')
                     }
                 }
             })
+<<<<<<< HEAD
             .state('anon.myTeam', {
                 url: '/',
                 views: {
@@ -31,6 +32,18 @@ angular.module('app')
                     }
                 }
             })
+=======
+            .state('anon.competition', {
+                url: '/',
+                views: {
+                    'content@': {
+                        templateUrl: 'anon/competition.html',
+                        controller: 'competitionController'
+                    }
+                }
+            })
+
+>>>>>>> 503887820fd801359c3447dbd057799b394bd736
             .state('anon.login', {
                 url: '/login',
                 views: {
