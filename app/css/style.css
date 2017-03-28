@@ -3,13 +3,14 @@
     -moz-column-count: 5;
     column-count: 5;
 }
-.logo{
+.logo {
    width:100px;
    height:100px;
    opacity: 1;
 }
-.logo{
+.logoVisible {
    width:100px;
    height:100px;
-   opacity: 0.5
+   opacity: 0.3;
+
 }

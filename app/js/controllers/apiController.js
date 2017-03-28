@@ -7,9 +7,9 @@ angular.module('app')
           };
           $scope.afficher();
 
-    $scope.myFunc = function(evt, logo2) {
-                console.log("logo2");
-                $scope.currentId = teams;
-
-            };
-    });
+          $scope.currentId = false;
+          $scope.myFunc = function(index) {
+              $scope.currentId = index;
+              console.log([index]);
+                        };
+        });
