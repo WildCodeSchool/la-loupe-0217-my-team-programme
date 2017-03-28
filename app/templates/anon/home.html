@@ -1,6 +1,7 @@
 <h1>My Team Programme</h1>
 
 <div id='calendar'>
+
     <ul>
         <li ng-repeat='match in schedule'>
             {{' Journée '}} {{match.matchday}} {{match.date | date : 'dd/MM/yyyy'}} {{match.homeTeamName}} {{' - '}} {{match.awayTeamName}}
