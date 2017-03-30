@@ -10,10 +10,10 @@
 
     </ul>
 
-    <div ng-controller="competitionController">
+    <div>
       <form name="myForm">
         <label for="repeatSelect"> Journée : </label>
-        <select name="repeatSelect" id="repeatSelect" ng-model="currentMatchday">
+        <select ng-change="update()"name="repeatSelect" id="repeatSelect" ng-model="currentMatchday">
           <option ng-repeat="day in competition.numberOfMatchdays" ng-value="day">{{day}}</option>
         </select>
       </form>
@@ -24,5 +24,4 @@
             {{match.homeTeamName}} {{match.result.goalsHomeTeam}} {{' - '}} {{match.result.goalsAwayTeam}} {{match.awayTeamName}}
         </li>
     </ul>
-
     </div>
