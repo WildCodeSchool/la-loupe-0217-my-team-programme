@@ -12,4 +12,5 @@ angular.module('app')
                 $scope.currentId = teams;
 
             };
+            
     });

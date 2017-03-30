@@ -4,6 +4,14 @@
             <div ng-repeat="error in errors">{{error.error}}</div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="name" class="form-control" ng-model="user.name" required placeholder="Nom">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="name" class="form-control" ng-model="user.first" required placeholder="Prenom">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                 <input id="email" type="email" class="form-control" ng-model="user.email" required placeholder="Email">
             </div>
             <div class="input-group">
@@ -11,10 +19,49 @@
                 <input id="password" type="password" class="form-control" ng-model="user.password" required placeholder="Mot de passe">
             </div>
             <div class="input-group">
-                <span></span>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" ng-model="user.password" required placeholder="Confirmation mot de passe">
+            </div>
+            <div class="input-group">
+                <!-- Large button group -->
+                <div class="btn-group">
+                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Equipe Favorite <span class="caret"></span>
+                </button>
+                    <ul class="dropdown-menu">
+                        ...
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn">Open Modal</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Modal Header</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container" ng-click="myFunc()">
+                                        <div class="logos">
+                                            <div ng-repeat="team in infoTeams.teams"><br>
+                                                <div ng-class="{logo1:team.crestUrl !== currentlogo}">
+                                                    <img class="logo" ng-src="{{team.crestUrl}}" alt="Logo" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
 
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button href="/" type="submit" class="btn btn-primary btn-block">Register</button>
         </form>
     </div>
 </div>
