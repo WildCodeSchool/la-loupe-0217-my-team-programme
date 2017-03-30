@@ -1,9 +1,12 @@
-<div class="container" ng-click="myFunc()">
-    <div class="logos">
-        <div ng-repeat="team in infoTeams.teams"><br>
-            <div ng-class="{logo1:team.crestUrl !== currentlogo}">
-                <img class="logo" ng-src="{{team.crestUrl}}" alt="Logo" />
+<div class="panel">
+    <div class="container">
+        <div class="logos">
+            <div ng-repeat="team in infoTeams.teams"><br>
+            <div ng-click='myFunc($index)' ng-class='{logoVisible: (currentId !== $index)}'>
+                    <img class="logo" ng-src="{{team.crestUrl}}" alt="Logo" />
+                </div>
             </div>
         </div>
+
     </div>
-</div>
+  </div>

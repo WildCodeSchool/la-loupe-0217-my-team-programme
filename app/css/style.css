@@ -6,8 +6,14 @@
 
 .logo{
    width:100px;
-   height:auto;
-   opacity: 0.5
+   height:100px;
+   opacity: 1;
+}
+.logoVisible {
+   width:100px;
+   height:100px;
+   opacity: 0.3;
+
 }
 
 /* The Modal (background) */
