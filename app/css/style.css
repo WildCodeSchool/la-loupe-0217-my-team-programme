@@ -15,15 +15,17 @@
 
 }
 #date {
-
+color: #f9a02e
 }
 
 #title{
-
+font-weight: bold;
+color: #1fa597
 }
 
 #calendar{
   text-align: center;
   list-style-type: none;
   margin-top: 30px;
+
 }
