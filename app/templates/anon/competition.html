@@ -58,5 +58,7 @@
         <li ng-repeat='match in schedule'>
             {{match.homeTeamName}} {{match.result.goalsHomeTeam}} {{' - '}} {{match.result.goalsAwayTeam}} {{match.awayTeamName}}
         </li>
+        <option ng-repeat='match in schedule' value="{{match.id}}">{{option.name}}</option>
+      <tt>valeur = {{schedule.homeTeamName}}</tt><br/>
     </ul>
     </div>

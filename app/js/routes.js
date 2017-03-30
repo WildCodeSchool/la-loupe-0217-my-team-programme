@@ -92,6 +92,15 @@ angular.module('app')
                         controller: 'ProfileController'
                     }
                 }
-            });
+            })
+            .state('createUser.create', {
+      url: '/create',
+      views: {
+          'content@': {
+              templateUrl: 'createUser/create.html',
+              controller: 'CreateUserController'
+          }
+      }
+  });
         $urlRouterProvider.otherwise('/');
     });
