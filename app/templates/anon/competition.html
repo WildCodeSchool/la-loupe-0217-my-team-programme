@@ -8,54 +8,19 @@
 
         <li ui-sref-active="active"><a ui-sref="anon.champions-league">Ligue des champions</a></li>
 
-        <div ng-controller="competitionController">
-            <form name="myForm">
-                <label for="singleSelect"> Journée </label><br>
-                <select name="singleSelect" ng-model="data.singleSelect">
-            <option value="option-1">Journée 1</option>
-            <option value="option-2">Journée 2</option>
-            <option value="option-1">Journée 3</option>
-            <option value="option-2">Journée 4</option>
-            <option value="option-1">Journée 5</option>
-            <option value="option-2">Journée 6</option>
-            <option value="option-1">Journée 7</option>
-            <option value="option-2">Journée 8</option>
-            <option value="option-1">Journée 9</option>
-            <option value="option-2">Journée 10</option>
-            <option value="option-1">Journée 11</option>
-            <option value="option-2">Journée 12</option>
-            <option value="option-1">Journée 13</option>
-            <option value="option-2">Journée 14</option>
-            <option value="option-1">Journée 15</option>
-            <option value="option-2">Journée 16</option>
-            <option value="option-1">Journée 17</option>
-            <option value="option-2">Journée 18</option>
-            <option value="option-1">Journée 19</option>
-            <option value="option-2">Journée 20</option>
-            <option value="option-1">Journée 21</option>
-            <option value="option-2">Journée 22</option>
-            <option value="option-1">Journée 23</option>
-            <option value="option-2">Journée 24</option>
-            <option value="option-1">Journée 25</option>
-            <option value="option-2">Journée 26</option>
-            <option value="option-1">Journée 27</option>
-            <option value="option-2">Journée 28</option>
-            <option value="option-1">Journée 29</option>
-            <option value="option-2">Journée 30</option>
-            <option value="option-1">Journée 31</option>
-            <option value="option-2">Journée 32</option>
-            <option value="option-1">Journée 33</option>
-            <option value="option-2">Journée 34</option>
-            <option value="option-1">Journée 35</option>
-            <option value="option-2">Journée 36</option>
-            <option value="option-1">Journée 37</option>
-            <option value="option-2">Journée 38</option>
-          </select>
-
     </ul>
 
+    <div>
+      <form name="myForm">
+        <label for="repeatSelect"> Journée : </label>
+        <select ng-change="update()"name="repeatSelect" id="repeatSelect" ng-model="currentMatchday">
+          <option ng-repeat="day in competition.numberOfMatchdays" ng-value="day">{{day}}</option>
+        </select>
+      </form>
+    </div>
+
     <ul>
-        <li ng-repeat='match in schedule'>
+        <li ng-repeat='match in matchsDay'>
             {{match.homeTeamName}} {{match.result.goalsHomeTeam}} {{' - '}} {{match.result.goalsAwayTeam}} {{match.awayTeamName}}
         </li>
         <option ng-repeat='match in schedule' value="{{match.id}}">{{option.name}}</option>
