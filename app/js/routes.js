@@ -13,7 +13,11 @@ angular.module('app')
                     },
                     'onglet@': {
                       templateUrl: 'anon/onglet.html'
-                    }
+                    },
+                        'footer@': {
+                            templateUrl: 'anon/footer.html',
+                            controller: 'FooterController'
+                        },
                 }
             })
             .state('anon.home', {
@@ -92,6 +96,15 @@ angular.module('app')
                         controller: 'ProfileController'
                     }
                 }
-            });
+            })
+            .state('createUser.create', {
+      url: '/create',
+      views: {
+          'content@': {
+              templateUrl: 'createUser/create.html',
+              controller: 'CreateUserController'
+          }
+      }
+  });
         $urlRouterProvider.otherwise('/');
     });
