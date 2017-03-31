@@ -7,6 +7,7 @@ angular.module('app')
             };
             $scope.afficher();
 
+
             $scope.currentId = false;
             $scope.myFunc = function(index) {
                 $scope.currentId = index;
