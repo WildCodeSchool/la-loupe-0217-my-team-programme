@@ -96,3 +96,12 @@
    from {top: -300px; opacity: 0}
    to {top: 0; opacity: 1}
 }
+
+.input-group {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#enregistrer li.active {
+    background-color: #fba858;
+}

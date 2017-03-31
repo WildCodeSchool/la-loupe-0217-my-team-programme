@@ -4,6 +4,6 @@
 
     <ul>
         <li ng-repeat='match in schedule'>
-            {{' Journée '}} {{match.matchday}} {{match.date | date : 'dd/MM/yyyy'}} {{match.homeTeamName}} {{' - '}} {{match.awayTeamName}}
+            {{' Journée '}} {{match.matchday}} {{match.date | date : 'dd/MM/yyyy'}} <br> {{match.homeTeamName}} {{' - '}} {{match.awayTeamName}}
         </li>
 </div>
