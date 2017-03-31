@@ -13,17 +13,6 @@ angular.module('app')
             $scope.update();
         });
 
-<<<<<<< HEAD
-        $scope.data = {
-      model: null,
-      availableOptions: [
-        {id: (match.homeTeamName) (match.result.goalsHomeTeam) , name: 'Journée 1'},
-        {id: '2', name: 'Journée 2'},
-        {id: '3', name: 'Journée 3'}
-      ]
-              };
-  });
-=======
         $scope.matchsDay = [];
         $scope.update = function() {
             competitionService.getMatchDay($scope.currentMatchday).then(function(res) {
@@ -32,4 +21,3 @@ angular.module('app')
             });
         };
     });
->>>>>>> 867f9604f4f5db5622fbfff3939d923b7cc8e8da

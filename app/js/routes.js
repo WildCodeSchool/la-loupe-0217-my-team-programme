@@ -13,7 +13,11 @@ angular.module('app')
                     },
                     'onglet@': {
                       templateUrl: 'anon/onglet.html'
-                    }
+                    },
+                        'footer@': {
+                            templateUrl: 'anon/footer.html',
+                            controller: 'FooterController'
+                        },
                 }
             })
             .state('anon.home', {

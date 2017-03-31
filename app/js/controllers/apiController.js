@@ -8,9 +8,8 @@ angular.module('app')
             $scope.afficher();
 
             $scope.currentId = false;
-            $scope.myFunc = function(index,name) {
+            $scope.myFunc = function(index) {
                 $scope.currentId = index;
-                $scope.test = (teams.name);
-                console.log(test);
+                  console.log([index]);
             };
           });
