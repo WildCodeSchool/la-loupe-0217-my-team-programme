@@ -1,17 +1,7 @@
 <div id='competition'>
 
-    <ul class="nav nav-pills">
-
-        <li ui-sref-active="active"><a ui-sref="anon.competition">Ligue 1</a></li>
-
-        <li ui-sref-active="active"><a ui-sref="anon.ligue-2">Ligue 2</a></li>
-
-        <li ui-sref-active="active"><a ui-sref="anon.champions-league">Ligue des champions</a></li>
-
-    </ul>
-
     <div>
-      <form name="myForm">
+      <form name="myForm" id="dropdown">
         <label for="repeatSelect"> Journée : </label>
         <select ng-change="update()"name="repeatSelect" id="repeatSelect" ng-model="currentMatchday">
           <option ng-repeat="day in competition.numberOfMatchdays" ng-value="day">{{day}}</option>
@@ -19,9 +9,9 @@
       </form>
     </div>
 
-    <ul>
-        <li ng-repeat='match in matchsDay'>
-            {{match.homeTeamName}} {{match.result.goalsHomeTeam}} {{' - '}} {{match.result.goalsAwayTeam}} {{match.awayTeamName}}
+    <ul id="bloc2">
+        <li ng-repeat='match in matchsDay' id="matchday">
+          <div id="date">{{match.date | date : 'dd/MM/yyyy'}}</div>   {{match.homeTeamName}} {{match.result.goalsHomeTeam}} {{' - '}} {{match.result.goalsAwayTeam}} {{match.awayTeamName}}
         </li>
     </ul>
     </div>
