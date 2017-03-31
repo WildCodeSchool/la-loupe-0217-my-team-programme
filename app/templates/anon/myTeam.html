@@ -1,11 +1,12 @@
+
 <div class="panel">
     <div class="container">
-        <div class="logos">
+        <div class="logos" id="logo">
             <div ng-repeat="team in infoTeams.teams"><br>
-                <div ng-click='myFunc($index)' ng-class='{"red" : (currentId == $index)}'>
+            <div ng-click='myFunc($index)' ng-class='{logoVisible: (currentId !== $index)}'>
                     <img class="logo" ng-src="{{team.crestUrl}}" alt="Logo" />
                 </div>
             </div>
         </div>
     </div>
-</div>
+  </div>

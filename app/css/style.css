@@ -1,10 +1,194 @@
 .logos {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
+
     column-count: 5;
+    column-gap: 5px;
 }
-.logo{
-   width:100px;
-   height:auto;
-   opacity: 0.5
+
+.logo {
+
+   width:auto;
+   height:80px;
+
+}
+
+.logoVisible {
+
+   width:auto;
+   height:80px;
+   opacity: 0.3;
+}
+.foto{
+  width:20px;
+  height:20px;
+}
+  #footer{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    bottom: 0;
+  	width: 1024px;
+    background-color: white;
+    width: 800px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    border-top: solid 1px;
+    border-color:#D2D1D1;
+    border-bottom: solid 1px;
+    border-color:#D2D1D1;
+    column-count:11;
+}
+
+#date {
+    color: #f9a02e
+}
+
+#title {
+    font-weight: bold;
+    color: #1fa597
+}
+
+#calendar {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+#bloc {
+    margin-top: 60px;
+}
+
+#bloc2 {
+    margin-top: 50px;
+}
+#logo {
+    margin-top: 80px;
+}
+
+#dropdown {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #1fa597
+}
+
+#matchday {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.nav.nav-tabs>li.active>a, .nav.nav-tabs>li.active>a:focus {
+    color: white;
+    background-color: #1fa597;
+}
+
+.nav-tabs>li.active>a:hover {
+    color: white;
+}
+.nav.nav-tabs>li>a {
+  color: #1fa597;
+}
+
+.dropdown-menu>li>a {
+  color: #1fa597
+}
+
+.dropdown-menu>li.active>a, .dropdown-menu>li.active>a:focus {
+  color: #1fa597
+
+
+}
+
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 2; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+   padding: 2px 16px;
+   background-color: #5cb85c;
+   color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+   padding: 2px 16px;
+   background-color: #5cb85c;
+   color: white;
+}
+
+/* Modal Content */
+.modal-content {
+   position: relative;
+   background-color: #fefefe;
+   margin: auto;
+   padding: 0;
+   border: 1px solid #888;
+   width: 80%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   -webkit-animation-name: animatetop;
+   -webkit-animation-duration: 0.4s;
+   animation-name: animatetop;
+   animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+   from {top: -300px; opacity: 0}
+   to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+   from {top: -300px; opacity: 0}
+   to {top: 0; opacity: 1}
+}
+
+.input-group {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.btn.btn-primary.btn-block {
+  background-color: #1fa597;
+
 }
