@@ -1,18 +1,116 @@
-.logos {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
+.container-fluid {
+  height: 160px;
+  background-color: #80cbc4;
 }
 
-.logo{
-   width:100px;
-   height:100px;
-   opacity: 1;
+.container.title {
+  text-align: center;
+  color: #ffdea5;
 }
+
+.btn.btn-default.btn-lg.dropdown-toggle {
+  background-color: #fba858;
+  color: white;
+}
+
+.logos {
+
+    column-count: 5;
+    column-gap: 5px;
+}
+
+.logo {
+
+   width:auto;
+   height:80px;
+}
+
 .logoVisible {
-   width:100px;
-   height:100px;
-   opacity: 0.3;
+
+    width: auto;
+    height: 80px;
+    opacity: 0.3;
+}
+
+#date {
+    color: #f9a02e
+}
+
+#title {
+    font-weight: bold;
+    color: #1fa597
+}
+
+#calendar {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+#bloc {
+    margin-top: 60px;
+}
+
+#bloc2 {
+    margin-top: 50px;
+}
+#logo {
+    margin-top: 80px;
+}
+
+#dropdown {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #1fa597
+}
+
+#matchday {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.nav.nav-tabs>li.active>a, .nav.nav-tabs>li.active>a:focus {
+    color: white;
+    background-color: #1fa597;
+}
+
+.nav-tabs>li.active>a:hover {
+    color: white;
+}
+.nav.nav-tabs>li>a {
+  color: #1fa597;
+}
+
+.dropdown-menu>li>a {
+  color: #1fa597
+}
+
+.dropdown-menu>li.active>a, .dropdown-menu>li.active>a:focus {
+  color: #1fa597
+
+}
+.footer{
+
+  width:20px;
+  height:20px;
+}
+.rectangle{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width:800px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  border-top: solid 1px;
+  border-color:#D2D1D1;
+  border-bottom: solid 1px;
+  border-color:#D2D1D1;
+  column-count:11;
 
 }
 
@@ -57,7 +155,7 @@
 /* Modal Header */
 .modal-header {
    padding: 2px 16px;
-   background-color: #5cb85c;
+   background-color: #f1f1f1;
    color: white;
 }
 
@@ -67,7 +165,7 @@
 /* Modal Footer */
 .modal-footer {
    padding: 2px 16px;
-   background-color: #5cb85c;
+   background-color: #f1f1f1;
    color: white;
 }
 
@@ -102,6 +200,7 @@
   margin-bottom: 3em;
 }
 
-#enregistrer li.active {
-    background-color: #fba858;
+.btn.btn-primary.btn-block {
+  background-color: #1fa597;
+  width: 110px;
 }

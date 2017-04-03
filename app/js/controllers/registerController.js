@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('RegisterController', function($scope, $state, Auth) {
+    .controller('RegisterController', function($scope, $state, Auth, ApiServices) {
         $scope.register = function() {
             Auth.register($scope.user).then(function() {
                 $state.go('anon.home');
@@ -31,4 +31,20 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 };
+
+// Make the teams appear in the modal
+$scope.afficher = function() {
+    ApiServices.getAll().then(function(res) {
+        $scope.infoTeams = res.data;
+    });
+};
+$scope.afficher();
+
+
+$scope.currentId = false;
+$scope.myFunc = function(index) {
+    $scope.currentId = index;
+      console.log([index]);
+};
+
     });
