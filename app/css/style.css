@@ -1,3 +1,4 @@
+
 .logos {
 
     column-count: 5;
@@ -94,6 +95,7 @@
 
 .dropdown-menu>li>a {
   color: #1fa597
+
 }
 
 .dropdown-menu>li.active>a, .dropdown-menu>li.active>a:focus {
@@ -192,3 +194,17 @@
   background-color: #1fa597;
 
 }
+ #seConnecter {
+   text-align: center;
+   margin-top: 100px;
+ }
+ #senregistrer {
+   text-align: center;
+   margin-top: 100px;
+ }
+.btn.btn-primary.btn-lg {
+ color: white;
+ background-color: #1fa597;
+ border-color: #1fa597;
+ width: 200px;
+ }
