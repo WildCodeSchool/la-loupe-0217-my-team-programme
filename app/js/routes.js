@@ -28,7 +28,7 @@ angular.module('app')
                 }
             })
             .state('anon.home', {
-                url: '/',
+                url: '/home',
                 views: {
                     'content@': {
                         templateUrl: 'anon/home.html',
@@ -48,7 +48,9 @@ angular.module('app')
         $stateProvider
             .state('user', {
                 abstract: true,
-                url: '/user',
+                data: {
+                    access: AccessLevels.user
+                },
                 views: {
                     'navbar@': {
                         templateUrl: 'user/navbar.html',
@@ -62,9 +64,6 @@ angular.module('app')
                         controller: 'FooterController'
                     },
                 },
-                data: {
-                    access: AccessLevels.user
-                }
             })
             .state('user.dashboard', {
                 url: '/dashboard',
@@ -75,11 +74,11 @@ angular.module('app')
                     }
                 }
             })
-            .state('user.home', {
+            .state('user.calendar', {
                 url: '/',
                 views: {
                     'content@': {
-                        templateUrl: 'user/home.html',
+                        templateUrl: 'user/calendar.html',
                         controller: 'calendarController'
                     }
                 }

@@ -53,7 +53,8 @@ angular.module('app')
                 if (LocalService.get('auth_token')) {
                     token = LocalService.get('auth_token');
                 }
-                if (token) {
+                var regex = /api.football-data.org/i
+                if (token && !regex.test(config.url)) {
                     config.headers.authorization = token;
                 }
                 return config;
