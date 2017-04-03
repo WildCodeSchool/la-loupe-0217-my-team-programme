@@ -4,7 +4,6 @@ angular.module('app')
     $scope.newUser = {
       firstname: '',
       lastname: '',
-      pseudo: '',
       email: ''
     };
 
