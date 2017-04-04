@@ -1,6 +1,19 @@
+.container-fluid {
+  height: 160px;
+  background-color: #80cbc4;
+}
+
+.container.title {
+  text-align: center;
+  color: #ffdea5;
+}
+
+.btn.btn-default.btn-lg.dropdown-toggle {
+  background-color: #fba858;
+  color: white;
+}
 
 .logos {
-
     column-count: 5;
     column-gap: 5px;
 }
@@ -9,7 +22,6 @@
 
    width:auto;
    height:80px;
-
 }
 
 .logoVisible {
