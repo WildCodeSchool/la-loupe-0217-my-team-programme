@@ -145,7 +145,7 @@
 /* Modal Header */
 .modal-header {
    padding: 2px 16px;
-   background-color: #5cb85c;
+   background-color: #f1f1f1;
    color: white;
 }
 
@@ -155,7 +155,7 @@
 /* Modal Footer */
 .modal-footer {
    padding: 2px 16px;
-   background-color: #5cb85c;
+   background-color: #f1f1f1;
    color: white;
 }
 
