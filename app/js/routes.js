@@ -12,10 +12,10 @@ angular.module('app')
                         controller: 'NavbarController'
                     },
 
-                        'footer@': {
-                            templateUrl: 'anon/footer.html',
-                            controller: 'FooterController'
-                        },
+                    'footer@': {
+                        templateUrl: 'anon/footer.html',
+                        controller: 'FooterController'
+                    },
                 }
             })
             .state('anon.login', {
@@ -28,7 +28,7 @@ angular.module('app')
                 }
             })
             .state('anon.home', {
-                url: '/home',
+                url: '/',
                 views: {
                     'content@': {
                         templateUrl: 'anon/home.html',
@@ -57,7 +57,7 @@ angular.module('app')
                         controller: 'NavbarController'
                     },
                     'onglet@': {
-                      templateUrl: 'user/onglet.html'
+                        templateUrl: 'user/onglet.html'
                     },
                     'footer@': {
                         templateUrl: 'user/footer.html',
@@ -65,17 +65,8 @@ angular.module('app')
                     },
                 },
             })
-            .state('user.dashboard', {
-                url: '/dashboard',
-                views: {
-                    'content@': {
-                        templateUrl: 'user/dashboard.html',
-                        controller: 'DashboardController'
-                    }
-                }
-            })
             .state('user.calendar', {
-                url: '/',
+                url: '/calendar',
                 views: {
                     'content@': {
                         templateUrl: 'user/calendar.html',
@@ -118,25 +109,6 @@ angular.module('app')
                         controller: 'ldcController'
                     }
                 }
-            })
-            .state('user.profile', {
-                url: '/profile',
-                views: {
-                    'content@': {
-                        templateUrl: 'user/profile.html',
-                        controller: 'ProfileController'
-                    }
-
-                }
-            })
-            .state('createUser.create', {
-      url: '/create',
-      views: {
-          'content@': {
-              templateUrl: 'createUser/create.html',
-              controller: 'CreateUserController'
-          }
-      }
-  });
+            });
         $urlRouterProvider.otherwise('/');
     });

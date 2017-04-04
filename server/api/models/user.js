@@ -25,6 +25,19 @@ const userSchema = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         default: false
+    },
+    nom: {
+        type: String
+
+    },
+    prenom: {
+        type: String
+
+    },
+    equipe: {
+        type: String,
+        required: true
+
     }
 });
 

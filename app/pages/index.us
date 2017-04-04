@@ -10,6 +10,14 @@
 </head>
 
 <body>
+    <header>
+        <div class="container-fluid header">
+            <div class="row">
+                <a href="#"><img id="titre" src="/img/logoMTP.png" alt="logo"></a>
+                <h1 id="site">My Team <br>Programme</h1>
+            </div>
+        </div>
+    </header>
 
     <div ui-view='navbar'></div>
     <div ui-view='onglet'></div>
