@@ -3,7 +3,7 @@ angular.module('app')
         $scope.afficher = function() {
             ApiServices.getAll().then(function(res) {
                 $scope.infoTeams = res.data;
-                console.log(res.data);
+
             });
         };
         $scope.afficher();
@@ -18,7 +18,7 @@ angular.module('app')
             } else {
                 newArray.push(index);
             }
-
+console.log(newArray);
         };
 
         $scope.isSelected = function(id) {

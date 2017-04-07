@@ -5,24 +5,56 @@
     <title>
         <%= pkg.name %>
     </title>
-
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
 </head>
 
 <body>
     <header>
-        <div class="container-fluid header">
-            <div class="row">
+        <div id="head" class="container-fluid">
+          <div class="row">
+            <div class="col-xs-3">
                 <a href="#"><img id="titre" src="/img/logoMTP.png" alt="logo"></a>
-                <h1 id="site">My Team <br>Programme</h1>
             </div>
+            <div class="col-xs-offset-2 col-xs-4">
+                <h1>My Team <br>Programme</h1>
+            </div>
+          </div>
         </div>
     </header>
 
     <div ui-view='navbar'></div>
     <div ui-view='onglet'></div>
     <div ui-view='content'></div>
-    <div ui-view='footer'></div>
+
+<footer class="footer p-t-1">
+        <div class="container">
+            <div class="pull-right">
+                <nav class="navbar" style="background:transparent; color: black;">
+                    <nav class="nav navbar-nav pull-xs-left">
+                        <a class="nav-item nav-link" href="#">Home</a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item nav-link" href="#">Download App</a>
+                        <a class="nav-item nav-link" href="#">Help</a>
+                    </nav>
+                </nav>
+            </div>
+
+            <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p fa-2x"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fa fa-flickr fa-2x"></i></a>
+            <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+
+            <p class="h6">
+                Powered by ParadigmOz.com
+                <a href="http://www.paradigmOz.com" target="_blank"></a>
+            </p>
+        </div>
+    </footer>
+</body>
+
     <script type="text/javascript" src="<%= js %>"></script>
 </body>
 

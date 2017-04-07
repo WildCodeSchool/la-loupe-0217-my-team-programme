@@ -1,12 +1,13 @@
-<div class="panel">
+<div id="panel" class="panel">
     <div class="container">
         <div class="logos">
-            <div ng-repeat="team in infoTeams.teams"><br>
-            <div ng-click='myFunc(team.id)' ng-class='{logoVisible: isSelected(team.id)}'>
-                    <img class="logo" ng-src="{{team.crestUrl}}" alt="Logo" />
-                                      </div>
+            <div class="col-lg-9 col-md-7 col-xs-5">
+                <div ng-repeat="team in infoTeams.teams"><br>
+                    <div ng-click='myFunc(team.id)' ng-class='{logoVisible: isSelected(team.id)}'>
+                        <img class="logo" ng-src="{{team.crestUrl}}" alt="Logo" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
+</div>

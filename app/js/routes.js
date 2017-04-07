@@ -18,21 +18,21 @@ angular.module('app')
                     },
                 }
             })
-            .state('anon.login', {
-                url: '/login',
-                views: {
-                    'content@': {
-                        templateUrl: 'anon/login.html',
-                        controller: 'LoginController'
-                    }
-                }
-            })
             .state('anon.home', {
                 url: '/',
                 views: {
                     'content@': {
                         templateUrl: 'anon/home.html',
                         controller: 'calendarController'
+                    }
+                }
+            })
+            .state('anon.login', {
+                url: '/login',
+                views: {
+                    'content@': {
+                        templateUrl: 'anon/login.html',
+                        controller: 'LoginController'
                     }
                 }
             })

@@ -1,6 +1,7 @@
 angular.module('app')
     .controller('RegisterController', function($scope, $state, Auth, ApiServices) {
         $scope.register = function() {
+          $scope.user.teams = newArray;
             Auth.register($scope.user).then(function() {
                 $state.go('anon.home');
             });
@@ -32,9 +33,19 @@ $scope.afficher = function() {
     });
 };
 $scope.afficher();
+var newArray = [];
 $scope.currentId = false;
+
 $scope.myFunc = function(index) {
-    $scope.currentId = index;
-      console.log([index]);
+    if (newArray.indexOf(index) != -1) {
+        newArray.splice(newArray.indexOf(index), 1);
+    } else {
+        newArray.push(index);
+    }
+console.log(newArray);
+};
+
+$scope.isSelected = function(id) {
+    return newArray.indexOf(id) == -1;
 };
 });

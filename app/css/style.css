@@ -1,6 +1,35 @@
+#head {
+  background-color: #f1f1f1;
+  height: 16vh;
+}
+
+#titre {
+  height: 16vh;
+}
+
+#title {
+    font-weight: bold;
+    color: #1fa597
+}
+
+#navcolor {
+  background-color: #58c4b8;
+}
+
+#panel {
+  min-width: 400px;
+}
+
+h1 {
+  font-family: 'Russo One', sans-serif;
+}
+
+.btn.btn-default.btn-lg.dropdown-toggle {
+  background-color: #fba858;
+  color: white;
+}
 
 .logos {
-
     column-count: 5;
     column-gap: 5px;
 }
@@ -9,7 +38,6 @@
 
    width:auto;
    height:80px;
-
 }
 
 .logoVisible {
@@ -44,11 +72,6 @@
     color: #f9a02e
 }
 
-#title {
-    font-weight: bold;
-    color: #1fa597
-}
-
 #calendar {
     text-align: center;
     list-style-type: none;
@@ -79,6 +102,22 @@
     list-style-type: none;
     margin-top: 30px;
     font-size: 15px;
+}
+
+#balade {
+  color: white;
+}
+
+#connect {
+  color: white;
+}
+
+#conect {
+  color: white;
+}
+
+#homebutton {
+  color: white;
 }
 
 .nav.nav-tabs>li.active>a, .nav.nav-tabs>li.active>a:focus {
@@ -124,7 +163,7 @@
    margin: 15% auto; /* 15% from the top and centered */
    padding: 20px;
    border: 1px solid #888;
-   width: 80%; /* Could be more or less, depending on screen size */
+   width: 90%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -145,7 +184,7 @@
 /* Modal Header */
 .modal-header {
    padding: 2px 16px;
-   background-color: #5cb85c;
+   background-color: #f1f1f1;
    color: white;
 }
 
@@ -155,7 +194,7 @@
 /* Modal Footer */
 .modal-footer {
    padding: 2px 16px;
-   background-color: #5cb85c;
+   background-color: #f1f1f1;
    color: white;
 }
 
@@ -192,7 +231,7 @@
 
 .btn.btn-primary.btn-block {
   background-color: #1fa597;
-
+  width: 110px;
 }
  #seConnecter {
    text-align: center;
@@ -207,4 +246,10 @@
  background-color: #1fa597;
  border-color: #1fa597;
  width: 200px;
+ }
+
+footer {
+  background-color: #f1f1f1;
+  min-height: 100%;
+  bottom: 0;
  }

@@ -26,19 +26,14 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
-    nom: {
+    lastname: {
         type: String
 
     },
-    prenom: {
+    firstname: {
         type: String
-
     },
-    equipe: {
-        type: String,
-        required: true
-
-    }
+    teams: []
 });
 
 userSchema.methods.comparePassword = function(pwd, cb) {
@@ -62,6 +57,8 @@ export default class User {
                 email: req.body.email
             }, (err, user) => {
                 if (err || !user) {
+
+                    console.log(user);
                     res.sendStatus(403);
                 } else {
                     user.comparePassword(req.body.password, (err, isMatch) => {

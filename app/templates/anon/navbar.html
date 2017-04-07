@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default" role="navigation" ng-controller="NavbarController">
-    <div class="container-fluid">
+    <div id="navcolor" class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -11,13 +11,12 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li ui-sref-active="active"><a ui-sref="anon.home">Home</a></li>
+                <li  ui-sref-active="active"><a id="homebutton" ui-sref="anon.home">Home</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <li ui-sref-active="active"><a ui-sref="anon.login" ng-hide="auth.isAuthenticated()">Se connecter</a></li>
-                    <li ui-sref-active="active"><a ui-sref="anon.register" ng-hide="auth.isAuthenticated()">S'enregistrer</a></li>
-                    <li ui-sref-active="active"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()">Dashboard</a></li>
+                    <li  ui-sref-active="active"><a id="connect" ui-sref="anon.login" ng-hide="auth.isAuthenticated()">Se connecter</a></li>
+                    <li  ui-sref-active="active"><a id="conect" ui-sref="anon.register" ng-hide="auth.isAuthenticated()">S'enregistrer</a></li>
                     <li><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Logout</a></li>
                 </li>
             </ul>
