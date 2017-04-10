@@ -1,10 +1,374 @@
+h1 {
+    font-family: 'Russo One', sans-serif;
+}
+
+
+/*header*/
+
+#head {
+    background-color: #f1f1f1;
+    height: 16vh;
+}
+
+#titre {
+    height: 16vh;
+}
+
+#title {
+    font-weight: bold;
+    color: #1fa597;
+    font-size: 20px;
+}
+
+#panel {
+    min-width: 400px;
+}
+
+.btn.btn-default.btn-lg.dropdown-toggle {
+    background-color: #fba858;
+    color: white;
+}
+
 .logos {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
     column-count: 5;
+    column-gap: 5px;
 }
-.logo{
-   width:100px;
-   height:auto;
-   opacity: 0.5
+
+.logo {
+    width: auto;
+    height: 80px;
 }
+
+.logoVisible {
+    width: auto;
+    height: 80px;
+    opacity: 0.3;
+}
+
+.foto {
+    width: 20px;
+    height: 20px;
+}
+
+#date {
+    color: #f9a02e
+}
+
+#calendar {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+#bloc {
+    margin-top: 60px;
+}
+
+#bloc2 {
+    margin-top: 50px;
+}
+
+#logo {
+    margin-top: 80px;
+}
+
+#dropdown {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #1fa597
+}
+
+#matchday {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+
+/*navbar*/
+
+#navcolor {
+    background-color: #58c4b8;
+}
+
+#balade {
+    color: white;
+}
+
+#connect {
+    color: white;
+}
+
+#conect {
+    color: white;
+}
+
+#homebutton {
+    color: white;
+}
+
+.nav.nav-tabs>li.active>a, .nav.nav-tabs>li.active>a:focus {
+    color: white;
+    background-color: #1fa597;
+}
+
+.nav-tabs>li.active>a:hover {
+    color: white;
+}
+
+.nav.nav-tabs>li>a {
+    color: #1fa597;
+}
+
+.dropdown-menu>li>a {
+    color: #1fa597
+}
+
+.dropdown-menu>li.active>a, .dropdown-menu>li.active>a:focus {
+    color: #1fa597
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Modal Header */
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #f1f1f1;
+    color: white;
+}
+
+
+/* Modal Body */
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+
+/* Modal Footer */
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #f1f1f1;
+    color: white;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/*groupe de bouton */
+
+.input-group {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.btn.btn-primary.btn-block {
+    background-color: #1fa597;
+    width: 110px;
+}
+
+#seConnecter {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#senregistrer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.btn.btn-primary.btn-lg {
+    color: white;
+    background-color: #1fa597;
+    border-color: #1fa597;
+    width: 200px;
+}
+
+
+/*footer*/
+
+#btValider {
+    margin-top: 20px;
+    margin-left: 70%;
+    color: white;
+    background-color: #1fa597;
+    border-radius: 6px;
+    border-color: #1fa597;
+    width: 110px;
+    font-size: 15px;
+}
+
+.teamLogo {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.teamName {
+    font-size: 20px;
+}
+
+ /*footer*/
+ html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   margin-bottom: 150px;
+ }
+
+ .footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 120px;
+   background-color: #f1f1f1;
+   text-align: center;
+
+ }
+
+ .container{
+   margin-top: 50px;
+   color: #fff;
+   width: 100%;
+ }
+
+ .fa-twitter {
+     color: #4099FF;
+ }
+
+ .fa-facebook {
+     color: #3B5998;
+ }
+
+ .fa-youtube-play {
+     color: #e52d27;
+ }
+
+ .fa-rss {
+     color: #FF6600;
+ }
+
+ .fa-vine {
+     color: #00a478;
+ }
+
+ .fa-flickr {
+     color: #ff0084;
+ }
+
+ .fa-twitch {
+     color: #6441A5;
+ }
+
+ .fa-linkedin {
+     color: #007bb6;
+ }
+
+ .fa {
+     opacity: 0.7;
+     transition: 1s;
+     -webkit-transition: 1s;
+ }
+
+ .fa:hover{
+     opacity: 1;
+     transition: 1s;
+     -webkit-transition: 1s;

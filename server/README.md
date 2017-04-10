@@ -18,7 +18,7 @@
 cd server
 npm install
 npm run createAdmin
-curl -d "email=admin@mail.com&password=12345&isAdmin=true" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:3000/
+curl -d "email=admin@mail.com&password=12345&isAdmin=true&teams=banane" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:3000/
 ```
 
 #### Development

@@ -13,6 +13,7 @@ angular.module('app')
 
         return {
             authorize: function(access) {
+              console.log(access);
                 if (access === AccessLevels.user) {
                     return this.isAuthenticated();
                 } else {
@@ -53,7 +54,8 @@ angular.module('app')
                 if (LocalService.get('auth_token')) {
                     token = LocalService.get('auth_token');
                 }
-                if (token) {
+                var regex = /api.football-data.org/i;
+                if (token && !regex.test(config.url)) {
                     config.headers.authorization = token;
                 }
                 return config;

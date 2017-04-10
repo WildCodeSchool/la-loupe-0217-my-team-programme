@@ -12,6 +12,11 @@ angular.module('app')
             },
             delete: function(id) {
                 return $http.delete('/users/' + id);
-            }
+            },
+            updateTeams: function(id, teams) {
+              return $http.put('/users/' + id + '/teams/', {teams:teams});
+          }
+
+
         };
     });

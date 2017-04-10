@@ -25,7 +25,15 @@ const userSchema = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         default: false
-    }
+    },
+    lastname: {
+        type: String
+
+    },
+    firstname: {
+        type: String
+    },
+    teams: []
 });
 
 userSchema.methods.comparePassword = function(pwd, cb) {
@@ -49,6 +57,8 @@ export default class User {
                 email: req.body.email
             }, (err, user) => {
                 if (err || !user) {
+
+                    console.log(user);
                     res.sendStatus(403);
                 } else {
                     user.comparePassword(req.body.password, (err, isMatch) => {
@@ -138,6 +148,25 @@ export default class User {
                     success: true,
                     user: user,
                     token: tk
+                });
+            }
+        });
+    }
+
+    updateTeams(req, res) {
+      console.log('req', req.body);
+
+        model.update({
+            _id: req.params.id
+        }, {
+          teams : req.body.teams
+        }, (err, user) => {
+            if (err || !user) {
+                res.status(500).send(err.message);
+            } else {
+                res.json({
+                    success: true,
+                    teams: user.teams,
                 });
             }
         });
