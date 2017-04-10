@@ -14,11 +14,13 @@ module.exports = (app) => {
 
     app.post('/login', user.connect);
 
-    router.get('/', Auth.isAdministrator, user.findAll);
+    router.get('/', Auth.hasAuthorization, user.findAll);
 
     router.get('/:id', Auth.hasAuthorization, user.findById);
 
     router.post('/', user.create);
+
+    router.put('/:id/teams', Auth.hasAuthorization, user.updateTeams);
 
     router.put('/:id', Auth.hasAuthorization, user.update);
 

@@ -11,7 +11,8 @@
 
     <ul id="bloc2">
         <li ng-repeat='match in matchsDay' id="matchday">
-          <div id="date">{{match.date | date : 'dd/MM/yyyy'}}</div>   {{match.homeTeamName}} {{match.result.goalsHomeTeam}} {{' - '}} {{match.result.goalsAwayTeam}} {{match.awayTeamName}}
+          <div id="date">{{match.date | date : 'dd/MM/yyyy'}}</div>
+          <img class='teamLogo' height="40px" src="{{match.logoHomeTeam}}">   <span class="teamName">{{match.homeTeamName}} {{match.result.goalsHomeTeam}} {{' - '}} {{match.result.goalsAwayTeam}} {{match.awayTeamName}}</span>    <img class='teamLogo' height="40px" src="{{match.logoAwayTeam}}">
         </li>
     </ul>
     </div>

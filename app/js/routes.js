@@ -22,8 +22,7 @@ angular.module('app')
                 url: '/',
                 views: {
                     'content@': {
-                        templateUrl: 'anon/home.html',
-                        controller: 'calendarController'
+                        templateUrl: 'anon/home.html'
                     }
                 }
             })

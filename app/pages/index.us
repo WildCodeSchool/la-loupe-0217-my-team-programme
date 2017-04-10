@@ -6,11 +6,12 @@
         <%= pkg.name %>
     </title>
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
 </head>
 
 <body>
+  <div id="wrap">
     <header>
         <div id="head" class="container-fluid">
           <div class="row">
@@ -28,34 +29,24 @@
     <div ui-view='onglet'></div>
     <div ui-view='content'></div>
 
-<footer class="footer p-t-1">
-        <div class="container">
-            <div class="pull-right">
-                <nav class="navbar" style="background:transparent; color: black;">
-                    <nav class="nav navbar-nav pull-xs-left">
-                        <a class="nav-item nav-link" href="#">Home</a>
-                        <a class="nav-item nav-link" href="#">About</a>
-                        <a class="nav-item nav-link" href="#">Download App</a>
-                        <a class="nav-item nav-link" href="#">Help</a>
-                    </nav>
-                </nav>
-            </div>
-
-            <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p fa-2x"></i></a>
-            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fa fa-flickr fa-2x"></i></a>
-            <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-
-            <p class="h6">
-                Powered by ParadigmOz.com
-                <a href="http://www.paradigmOz.com" target="_blank"></a>
-            </p>
-        </div>
-    </footer>
+    <div class="footer">
+      <div class="container">
+              <a href='#'><i class="fa fa-twitch fa-2x fa-fw"></i></a>
+              <a href='#'><i class="fa fa-facebook fa-2x fa-fw"></i></a>
+              <a href='#'><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+              <a href='#'><i class="fa fa-youtube-play fa-2x fa-fw"></i></a>
+              <a href='#'><i class="fa fa-rss fa-2x fa-fw"></i></a>
+              <a href='#'><i class="fa fa-vine fa-2x fa-fw"></i></a>
+              <a href='#'><i class="fa fa-flickr fa-2x fa-fw"></i></a>
+              <a href='#'><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
+            </span>
+      </div>
+    </div2
+  </div>
+  <script type="text/javascript" src="<%= js %>"></script>
 </body>
 
-    <script type="text/javascript" src="<%= js %>"></script>
-</body>
+
+
 
 </html>

@@ -18,6 +18,13 @@ var myApp = angular.module('app')
                         "X-Auth-Token": API
                     }
                 });
+            },
+            getOne: function (id) {
+              return $http.get('http://api.football-data.org/v1/teams/' + id, {
+                headers: {
+                    'X-Auth-Token': 'faea8f402c814bbeb0fca2a32e0e3e36'
+                }
+              });
             }
         };
     });

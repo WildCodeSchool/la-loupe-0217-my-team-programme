@@ -153,6 +153,25 @@ export default class User {
         });
     }
 
+    updateTeams(req, res) {
+      console.log('req', req.body);
+
+        model.update({
+            _id: req.params.id
+        }, {
+          teams : req.body.teams
+        }, (err, user) => {
+            if (err || !user) {
+                res.status(500).send(err.message);
+            } else {
+                res.json({
+                    success: true,
+                    teams: user.teams,
+                });
+            }
+        });
+    }
+
     delete(req, res) {
         model.findByIdAndRemove(req.params.id, (err) => {
             if (err) {

@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('ApiController', function($scope, ApiServices) {
+    .controller('ApiController', function($scope, UserService, CurrentUser, ApiServices) {
         $scope.afficher = function() {
             ApiServices.getAll().then(function(res) {
                 $scope.infoTeams = res.data;
@@ -8,20 +8,31 @@ angular.module('app')
         };
         $scope.afficher();
 
-
-        var newArray = [];
+        $scope.teamUser =[];
         $scope.currentId = false;
 
         $scope.myFunc = function(index) {
-            if (newArray.indexOf(index) != -1) {
-                newArray.splice(newArray.indexOf(index), 1);
+            if ($scope.teamUser.indexOf(index) != -1) {
+                $scope.teamUser.splice($scope.teamUser.indexOf(index), 1);
             } else {
-                newArray.push(index);
+                $scope.teamUser.push(index);
             }
-console.log(newArray);
+
+        };
+        UserService.getOne(CurrentUser.user()._id).then(function(res) {
+            $scope.teamUser = res.data.teams;
+
+            console.log($scope.teamUser);
+        });
+
+        $scope.updateTeams = function() {
+          UserService.updateTeams(CurrentUser.user()._id, $scope.teamUser).then(function(res) {
+            console.log(res);
+          });
         };
 
         $scope.isSelected = function(id) {
-            return newArray.indexOf(id) == -1;
+            return $scope.teamUser.indexOf(id) == -1;
         };
+
     });
